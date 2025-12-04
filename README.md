@@ -1,2 +1,41 @@
-# -100-University-of-Sheffield-100-Attendance-System-
-你还在为谢菲尔德大学的手机软件（isheffield）签到失败而经常苦恼吗？这个浏览器插件可以帮助你无视你手机或电脑上的报错100%的成功签到。（包括无视定位）Are you still frequently frustrated by failed check-ins on the University of Sheffield's mobile app (isheffield)? This browser extension can help you bypass error messages on your phone or computer, ensuring 100% successful check-ins.
+# Sheffield 提前签到助手 Chrome插件
+
+一个帮助Sheffield大学学生提前完成课程签到的Chrome浏览器插件。
+
+## 作者信息
+
+**原作者：林枫☁ (Bristol版本)**  
+**改编者：迁移至Sheffield大学**  
+谢菲尔德大学 计算机科学系  
+University of Sheffield, Department of Computer Science
+
+## 安装方法
+
+1. 下载或克隆此项目到本地
+2. 打开Chrome浏览器，进入扩展程序管理页面（chrome://extensions/）
+3. 开启"开发者模式"
+4. 点击"加载已解压的扩展程序"
+5. 选择项目文件夹
+6. 插件安装完成
+
+## 使用方法
+
+安装插件后，跟着插件指引操作即可。插件会自动获取你的课程表信息，并提供一键签到功能。
+
+## 技术实现
+
+本扩展从Bristol大学版本迁移而来，两校使用相同的CampusM平台。通过Hook网络请求获取用户认证信息，使用OpenStreetMap地理编码API获取课程地点真实坐标，实现智能签到。
+
+## 安全特性
+
+- 🔒 **本地存储**: 本插件获得的任何数据都存储在用户本地，没有连接任何服务器
+- 🛡️ **隐私保护**: 不收集、不上传、不分享任何用户数据
+- 🔐 **数据安全**: 所有操作都在本地完成，确保数据安全性
+
+## 免责声明
+
+- 本插件仅供学习分享，严禁用于任何盈利用途
+- 本插件不对任何结果负责，所有的一切仅供学习分享
+- 作者强烈建议好好学习天天向上，不要依赖此插件
+- 请在合规的情况下使用此插件
+

@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Sheffield 提前签到助手",
+  "version": "2.0",
+  "description": "Sheffield大学提前签到助手，支持课程表查看和一键签到功能",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://i.sheffield.ac.uk/*",
+    "https://*.sheffield.ac.uk/*",
+    "https://nominatim.openstreetmap.org/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://i.sheffield.ac.uk/*", "https://*.sheffield.ac.uk/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Sheffield 提前签到助手",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["*.js", "inject.js"],
+      "matches": ["*://*.sheffield.ac.uk/*"]
+    }
+  ]
+}
