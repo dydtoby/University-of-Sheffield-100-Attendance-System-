@@ -1,6 +1,6 @@
 # Sheffield 100%签到助手 Chrome插件
 
-一个帮助Sheffield大学学生提前完成课程签到的Chrome浏览器插件。
+一个帮助Sheffield大学学生100%完成课程签到的Chrome/edge浏览器插件。
 
 ## 作者信息
 
